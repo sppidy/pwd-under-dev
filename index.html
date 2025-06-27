@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>People’s Water Data – Redesign in Progress</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth wave animation */
+    .wave {
+      animation: waveMove 10s linear infinite;
+    }
+
+    @keyframes waveMove {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body class="relative bg-blue-50 text-gray-800 min-h-screen flex items-center justify-center p-6 overflow-hidden">
+
+  <!-- Animated Waves -->
+  <div class="absolute bottom-0 left-0 w-[200%] h-48 overflow-hidden pointer-events-none z-0">
+    <svg class="wave w-full h-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="#60a5fa" fill-opacity="0.3" d="M0,128L48,122.7C96,117,192,107,288,117.3C384,128,480,160,576,176C672,192,768,192,864,176C960,160,1056,128,1152,133.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center max-w-xl">
+    <div class="mb-6">
+      <svg class="w-16 h-16 mx-auto text-blue-500 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 0C6 5 2 8.5 2 12a8 8 0 0016 0c0-3.5-4-7-8-12z"/>
+      </svg>
+    </div>
+
+    <h1 class="text-4xl font-bold text-blue-800 mb-2">Something Refreshing is Coming 💧</h1>
+    <p class="text-lg text-gray-700 mb-4">
+      The People’s Water Data Platform is being completely redesigned.
+    </p>
+    <p class="text-gray-600">
+      We're crafting a clean, modern, and insightful experience to empower better understanding of water data across the globe.
+    </p>
+
+    <p class="mt-6 text-sm text-gray-400">
+      &copy; 2025 People’s Water Data Platform. All rights reserved.
+    </p>
+  </div>
+</body>
+</html>
